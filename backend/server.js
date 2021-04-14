@@ -14,6 +14,10 @@ const app = express()
 app.use(cors())
 app.use(express.static('public'))
 
+app.get('/', (req, res) => {
+    res.send(`Hello, Welcome to Sandra's Profile`)
+})
+
 app.get('/projects', async (req, res) => {
     const projects = await Project.find()
     res.json(projects)
