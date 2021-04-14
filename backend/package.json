@@ -1,7 +1,7 @@
 {
-  "name": "explore-macedonia",
+  "name": "profile",
   "version": "1.0.0",
-  "description": "project for Travel Agency",
+  "description": "My portfolio",
   "scripts": {
     "start": "babel-node server.js",
     "dev": "nodemon -r dotenv/config server.js --exec babel-node"
