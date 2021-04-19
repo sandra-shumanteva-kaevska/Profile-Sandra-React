@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.send(`Hello, Welcome to Sandra's Profile`)
+    res.send(`Hello, Welcome to Sandra's Portfolio Data`)
 })
 
 app.get('/projects', async (req, res) => {
