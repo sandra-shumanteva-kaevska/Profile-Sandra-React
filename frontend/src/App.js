@@ -5,10 +5,10 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
 import Loader from 'react-loader-spinner'
 
-import background from './assets/background.jpg'
 import { Navbar } from './components/Navbar'
 import { myTheme } from './theme/myTheme'
 import { Home } from './pages/Home'
+import { Projects } from './pages/Projects'
 
 
 
@@ -18,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         flex: '1',
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
     },
 }))
 
@@ -48,6 +44,7 @@ export const App = () => {
                         </Route>
 
                         <Route path="/projects" exact>
+                            <Projects showLoader={setLoader} />
                         </Route>
 
                         <Route path="/aboutMe" exact>

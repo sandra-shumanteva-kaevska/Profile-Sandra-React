@@ -6,5 +6,5 @@ export const myTheme = createMuiTheme({
             'Chilanka',
             'cursive',
         ].join(','),
-    }
+    },
 })

@@ -21,7 +21,8 @@
         "preview": {
             "backend": "https://explore-macedonia.herokuapp.com",
             "frontend": "https://explore-north-macedonia.netlify.app/"
-        }
+        },
+        "number": 18
     },
     {
         "title": "PROJECT AUTH",
@@ -44,7 +45,8 @@
         "preview": {
             "backend": "https://authentication-sandra-sofia.herokuapp.com/",
             "frontend": "https://auth-sandra-sofia.netlify.app/"
-        }
+        },
+        "number": 17
     },
     {
         "title": "WEB APP AND API FOR POSTING HAPPY THOUGHTS",
@@ -70,7 +72,8 @@
         "preview": {
             "backend": "https://happy-thoughts-sandra.herokuapp.com/",
             "frontend": "https://happy-thoughts-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 16
     },
     {
         "title": "API FOR LISTING BOOKS",
@@ -88,7 +91,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-mongo-api",
         "preview": {
             "backend": "https://sandra-mongo-api.herokuapp.com/"
-        }
+        },
+        "number": 15
     },
     {
         "title": "WEB APP FOR TODOS",
@@ -106,7 +110,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-todos",
         "preview": {
             "frontend": "https://todos-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 14
     },
     {
         "title": "PROJECT LABYRINTH",
@@ -127,7 +132,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-labyrinth",
         "preview": {
             "frontend": "https://labyrinth-react-redux.netlify.app"
-        }
+        },
+        "number": 13
     },
     {
         "title": "PROJECT REDUX QUIZ",
@@ -146,7 +152,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-redux-quiz",
         "preview": {
             "frontend": "https://wild-animals-quiz.netlify.app/"
-        }
+        },
+        "number": 12
     },
     {
         "title": "PROJECT SURVAY FORM",
@@ -164,7 +171,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-survey",
         "preview": {
             "frontend": "https://survey-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 11
     },
     {
         "title": "MOBILE APP FOR WEATHER FORECAST",
@@ -178,7 +186,8 @@
         "image": "/images/mobile-weather-app-img.png",
         "year": 2020,
         "github": "https://github.com/sandra-shumanteva-kaevska/project-react-native-app",
-        "preview": {}
+        "preview": {},
+        "number": 10
     },
     {
         "title": "FOOD REVIEW WEB APP",
@@ -194,7 +203,8 @@
         "image": "",
         "year": 2020,
         "github": "https://github.com/sandra-shumanteva-kaevska/project-food-foxes-2",
-        "preview": {}
+        "preview": {},
+        "number": 9
     },
     {
         "title": "LISTING MOVIES USING TMDb API",
@@ -213,7 +223,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-movies",
         "preview": {
             "frontend": "https://sandra-shumanteva-movie-site.netlify.app/"
-        }
+        },
+        "number": 8
     },
     {
         "title": "LISTING MUSIC ALBUMS USING SPOTIFY API",
@@ -233,7 +244,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-music-releases",
         "preview": {
             "frontend": "https://spotify-sandra-moa.netlify.app/"
-        }
+        },
+        "number": 7
     },
     {
         "title": "MY PORFOLIO",
@@ -249,7 +261,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/My-portfolio",
         "preview": {
             "frontend": "https://portfolio-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 6
     },
     {
         "title": "CLUEDO MISTERY GAME",
@@ -265,7 +278,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-cluedo",
         "preview": {
             "frontend": "https://cluedo-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 5
     },
     {
         "title": "WEATHER FORCAST",
@@ -281,7 +295,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-weather-app",
         "preview": {
             "frontend": "https://weather-app-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 4
     },
     {
         "title": "PIZZA BOT",
@@ -299,7 +314,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-pizza-bot",
         "preview": {
             "frontend": "https://elated-kepler-420a4b.netlify.app/"
-        }
+        },
+        "number": 3
     },
     {
         "title": "HOW MUCH SLEEP YOU NEED?",
@@ -316,7 +332,8 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-business-site",
         "preview": {
             "frontend": "https://business-site-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 2
     },
     {
         "title": "NEWS ABOUT FRIENDS SERIES",
@@ -332,6 +349,7 @@
         "github": "https://github.com/sandra-shumanteva-kaevska/project-news-site",
         "preview": {
             "frontend": "https://news-site-sandra-shumanteva.netlify.app/"
-        }
+        },
+        "number": 1
     }
 ]

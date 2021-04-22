@@ -25,6 +25,10 @@ export const Project = new mongoose.model('Project', {
     preview: {
         backend: String,
         frontend: String
+    },
+    number: {
+        type: Number,
+        required: true
     }
 })
 
