@@ -45,7 +45,7 @@ const useStyles = makeStyles({
     },
     cardActionsStyle: {
         flex: 1,
-        alignItems: 'flex-end'
+        alignItems: 'flex-end',
     }
 })
 

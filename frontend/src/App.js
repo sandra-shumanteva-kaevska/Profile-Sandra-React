@@ -9,6 +9,7 @@ import { Navbar } from './components/Navbar'
 import { myTheme } from './theme/myTheme'
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
+import { AboutMe } from './pages/AboutMe'
 
 
 
@@ -48,6 +49,7 @@ export const App = () => {
                         </Route>
 
                         <Route path="/aboutMe" exact>
+                            <AboutMe />
                         </Route>
 
                         <Route path="/contactMe" exact>

@@ -63,10 +63,11 @@ export const Navbar = () => {
                                 <AssignmentIcon className={classes.icon} />
                             </IconButton>
                         </Link>
-
-                        <IconButton title='About Me' >
-                            <InfoIcon className={classes.icon} />
-                        </IconButton>
+                        <Link to={'/aboutMe'}>
+                            <IconButton title='About Me' >
+                                <InfoIcon className={classes.icon} />
+                            </IconButton>
+                        </Link>
 
                         <IconButton title='Contact Me' >
                             <ContactMailIcon className={classes.icon} />

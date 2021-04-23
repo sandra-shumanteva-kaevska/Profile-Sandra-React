@@ -5,7 +5,6 @@ import Box from '@material-ui/core/Box'
 import { ProjectCard } from '../components/ProjectCard'
 import { baseAPI } from '../config'
 
-
 const useStyles = makeStyles((theme) => ({
     container: {
         height: '100',
