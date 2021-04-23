@@ -86,7 +86,7 @@
             "Git",
             "MongoDB"
         ],
-        "image": "/images/listening-books-img.png",
+        "image": "/images/listing-books-img.png",
         "year": 2021,
         "github": "https://github.com/sandra-shumanteva-kaevska/project-mongo-api",
         "preview": {

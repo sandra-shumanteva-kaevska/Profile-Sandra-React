@@ -20,7 +20,9 @@ const useStyles = makeStyles({
         flex: '1 0 21%',
     },
     card: {
-        height: "100%"
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%'
     },
     media: {
         height: '200px',
@@ -40,8 +42,14 @@ const useStyles = makeStyles({
         '&:hover': {
             backgroundColor: '#7b1fa2'
         }
+    },
+    cardActionsStyle: {
+        flex: 1,
+        alignItems: 'flex-end'
     }
 })
+
+const heightlightTech = ["React", "Redux", 'ReactNative', 'Node.js']
 
 export const ProjectCard = (project) => {
     const classes = useStyles()
@@ -64,7 +72,7 @@ export const ProjectCard = (project) => {
                         </Typography>
                         <Box className={classes.techStyle}>
                             {project.tech.map(i => <React.Fragment key={i} >
-                                {i === "React" || i === "Redux" || i === 'ReactNative' || i === 'Node.js' ?
+                                {heightlightTech.includes(i) ?
                                     <Chip size="small" color="secondary" label={i} className={classes.chipStyle} />
                                     : <Chip size="small" label={i} className={classes.chipStyle} />
                                 }
@@ -73,7 +81,7 @@ export const ProjectCard = (project) => {
                         </Box>
                     </CardContent>
                 </CardActionArea>
-                <CardActions>
+                <CardActions className={classes.cardActionsStyle}>
                     <Button className={classes.buttonPurple} href={project.github} target='blank'> GitHub</Button>
                     <SplitButton preview={project.preview} />
                 </CardActions>
