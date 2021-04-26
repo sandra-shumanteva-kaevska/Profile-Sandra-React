@@ -29,14 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
     mailStyle: {
         padding: '10px',
-        fontSize: '30px',
-        '@media (max-width: 480px)': {
-            fontSize: '15px',
-            fontSize: '32px'
-        },
-        '@media (min-width: 481px) and (max-width: 780px)': {
-            fontSize: '20px',
-        }
+        fontSize: '32px'
     }
 
 }))
