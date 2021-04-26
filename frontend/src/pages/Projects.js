@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
     projectsList: {
         display: 'flex',
         flexWrap: 'wrap',
-    },
+        flex: 1
+    }
 }))
 
 export const Projects = ({ showLoader }) => {

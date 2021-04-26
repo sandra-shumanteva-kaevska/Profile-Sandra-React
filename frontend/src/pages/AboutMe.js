@@ -40,22 +40,21 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap'
     },
     imgStyle: {
-        width: '40%',
-        margin: '10px',
-        flex: '1 0 21%',
         '@media (max-width: 480px)': {
-            width: '70%',
-            margin: '3px',
-            flex: '1 0 90%',
+            flex: '1 0 100%',
         },
         '@media (min-width: 481px) and (max-width: 780px)': {
-            width: '50%',
-            margin: '5px',
-            flex: '1 0 45%',
+            flex: '1 0 50%',
+        },
+        '@media (min-width: 781px) and (max-width: 1300px)': {
+            flex: '1 0 33%',
+        },
+        '@media (min-width: 1300px)': {
+            flex: '1 0 25%',
         }
     },
     img: {
-        width: '100%'
+        width: '100%',
     }
 }))
 export const AboutMe = () => {
@@ -83,16 +82,24 @@ export const AboutMe = () => {
                     <p className={classes.paragraphGreen}>Some funny facts for junior developer: </p>
                     <Box className={classes.imgContainer}>
                         <Box className={classes.imgStyle}>
-                            <img src={god} alt='man thinking in front of the laptop' className={classes.img} />
+                            <Box p={1}>
+                                <img src={god} alt='man thinking in front of the laptop' className={classes.img} />
+                            </Box>
                         </Box>
                         <Box className={classes.imgStyle}>
-                            <img src={junior} alt='grandma with glasses look in front of the laptop' className={classes.img} />
+                            <Box p={1}>
+                                <img src={junior} alt='grandma with glasses look in front of the laptop' className={classes.img} />
+                            </Box>
                         </Box>
                         <Box className={classes.imgStyle}>
-                            <img src={whileImg} alt='while code' className={classes.img} />
+                            <Box p={1}>
+                                <img src={whileImg} alt='while code' className={classes.img} />
+                            </Box>
                         </Box>
                         <Box className={classes.imgStyle}>
-                            <img src={working} alt='man thinking in front of the laptop' className={classes.img} />
+                            <Box p={1}>
+                                <img src={working} alt='man thinking in front of the laptop' className={classes.img} />
+                            </Box>
                         </Box>
                     </Box>
                 </Paper>

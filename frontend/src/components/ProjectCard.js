@@ -15,13 +15,30 @@ import { SplitButton } from '../components/SplitButton'
 
 const useStyles = makeStyles({
     root: {
-        padding: '20px',
-        flex: '1 0 21%',
+        display: 'flex',
+        flexDirection: 'column',
+        flexWrap: 'wrap',
+        '@media (max-width: 480px)': {
+            flex: '1 0 100%',
+        },
+        '@media (min-width: 481px) and (max-width: 780px)': {
+            flex: '1 0 50%',
+        },
+        '@media (min-width: 781px) and (max-width: 1300px)': {
+            flex: '1 0 33%',
+        },
+        '@media (min-width: 1300px)': {
+            flex: '1 0 25%',
+        }
+    },
+    cardContainer: {
+        padding: '10px',
+        height: '100%'
     },
     card: {
         display: 'flex',
         flexDirection: 'column',
-        height: '100%'
+        height: '100%',
     },
     media: {
         height: '200px',
@@ -56,36 +73,38 @@ export const ProjectCard = (project) => {
 
     return (
         <Box className={classes.root}>
-            <Card className={classes.card}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image={`${baseAPI}${project.image}`}
-                        title='picture of project'
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant='h5' component='h2'>
-                            {project.title}
-                        </Typography>
-                        <Typography variant='body2' color='textSecondary' component='p'>
-                            {project.description}
-                        </Typography>
-                        <Box className={classes.techStyle}>
-                            {project.tech.map(i => <React.Fragment key={i} >
-                                {heightlightTech.includes(i) ?
-                                    <Chip size='small' color='secondary' label={i} className={classes.chipStyle} />
-                                    : <Chip size='small' label={i} className={classes.chipStyle} />
-                                }
-                            </React.Fragment>
-                            )}
-                        </Box>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions className={classes.cardActionsStyle}>
-                    <Button className={classes.buttonPurple} href={project.github} target='blank'> GitHub</Button>
-                    <SplitButton preview={project.preview} />
-                </CardActions>
-            </Card>
+            <Box className={classes.cardContainer}>
+                <Card className={classes.card}>
+                    <CardActionArea>
+                        <CardMedia
+                            className={classes.media}
+                            image={`${baseAPI}${project.image}`}
+                            title='picture of project'
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant='h5' component='h2'>
+                                {project.title}
+                            </Typography>
+                            <Typography variant='body2' color='textSecondary' component='p'>
+                                {project.description}
+                            </Typography>
+                            <Box className={classes.techStyle}>
+                                {project.tech.map(i => <React.Fragment key={i} >
+                                    {heightlightTech.includes(i) ?
+                                        <Chip size='small' color='secondary' label={i} className={classes.chipStyle} />
+                                        : <Chip size='small' label={i} className={classes.chipStyle} />
+                                    }
+                                </React.Fragment>
+                                )}
+                            </Box>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions className={classes.cardActionsStyle}>
+                        <Button className={classes.buttonPurple} href={project.github} target='blank'> GitHub</Button>
+                        <SplitButton preview={project.preview} />
+                    </CardActions>
+                </Card>
+            </Box>
         </Box>
     );
 }
