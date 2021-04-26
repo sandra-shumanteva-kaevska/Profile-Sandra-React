@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center'
     },
     mailStyle: {
+        padding: '10px',
         fontSize: '30px',
         '@media (max-width: 480px)': {
             fontSize: '15px',
