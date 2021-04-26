@@ -30,13 +30,15 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         alignItems: 'center'
     },
-    aStyle: {
+    mailStyle: {
         fontSize: '30px',
-        '@media (max-width: 425px)': {
+
+        '@media (max-width: 480px)': {
             fontSize: '15px',
-            '@media (max-width: 768px)': {
-                fontSize: '20px',
-            }
+        },
+
+        '@media (min-width: 481px) and (max-width: 780px)': {
+            fontSize: '20px',
         }
     }
 }))
@@ -49,9 +51,9 @@ export const ContactMe = () => {
             <Paper elevation={3} className={classes.paperStyle}>
                 <h2> Please do not hesitate to contact me for further information on this mail: </h2>
                 <Box className={classes.contactContainer}>
-                    <img className={classes.imgStyle} src={mailImg} />
+                    <img className={classes.imgStyle} alt='woman with letters' src={mailImg} />
                     <Box>
-                        <a className={classes.aStyle} href='mailto:sandra@shumantevi.mk'>sandra@shumantevi.mk</a>
+                        <a className={classes.mailStyle} href='mailto:sandra@shumantevi.mk'>sandra@shumantevi.mk</a>
                     </Box>
                 </Box>
             </Paper>
