@@ -1,4 +1,4 @@
-import { Box, FormHelperText } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import React from 'react'
 import myImg from '../assets/my-img.jpg'
 import { makeStyles } from '@material-ui/core/styles'
@@ -42,7 +42,7 @@ export const Home = () => {
                 <h3 >+ bank appriser</h3>
             </Box>
             <Box className={classes.containerImg}>
-                <img className={classes.myImg} src={myImg}></img>
+                <img className={classes.myImg} src={myImg} alt="my-profile"></img>
             </Box>
         </Box>
     )

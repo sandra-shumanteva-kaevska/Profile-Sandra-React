@@ -7,7 +7,6 @@ import mailImg from '../assets/images/mailImg.png'
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        background: 'rgb(165,158,205)',
         background: 'linear-gradient(90deg, rgba(165,158,205,1) 0%, rgba(23,213,9,1) 100%)',
         display: ' flex',
         justifyContent: 'center',

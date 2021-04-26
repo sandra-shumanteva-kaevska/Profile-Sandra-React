@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
         flexGrow: 1,
-        background: 'rgb(165,158,205)',
         background: 'linear-gradient(90deg, rgba(165,158,205,1) 0%, rgba(23,213,9,1) 100%)'
     },
     projectsList: {
@@ -20,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 
 export const Projects = ({ showLoader }) => {
     const [projetcs, setProjects] = useState([])
-    const [error, setError] = useState('')
     const classes = useStyles()
 
     useEffect(() => {
@@ -34,11 +32,8 @@ export const Projects = ({ showLoader }) => {
             })
             .then(response => response.json())
             .then(json => setProjects(json))
-            .catch((error) => {
-                setError('Projects were not found')
-            })
             .finally(() => showLoader(false))
-    }, [])
+    }, [showLoader])
 
     return (
         <Box className={classes.container}>
