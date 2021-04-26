@@ -10,6 +10,7 @@ import { myTheme } from './theme/myTheme'
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
 import { AboutMe } from './pages/AboutMe'
+import { ContactMe } from './pages/ContactMe'
 
 
 
@@ -32,27 +33,28 @@ export const App = () => {
                     <Navbar />
 
                     {loader && <Loader
-                        type="Hearts"
-                        color="pink"
+                        type='Hearts'
+                        color='pink'
                         height={200}
                         width={200}
-                        className="loader" />}
+                        className='loader' />}
 
                     <Switch>
 
-                        <Route path="/" exact>
+                        <Route path='/' exact>
                             <Home />
                         </Route>
 
-                        <Route path="/projects" exact>
+                        <Route path='/projects' exact>
                             <Projects showLoader={setLoader} />
                         </Route>
 
-                        <Route path="/aboutMe" exact>
+                        <Route path='/aboutMe' exact>
                             <AboutMe />
                         </Route>
 
-                        <Route path="/contactMe" exact>
+                        <Route path='/contactMe' exact>
+                            <ContactMe />
                         </Route>
 
                     </Switch>
@@ -63,6 +65,6 @@ export const App = () => {
 }
 
 
-render(<App />, document.getElementById("root"))
+render(<App />, document.getElementById('root'))
 
 

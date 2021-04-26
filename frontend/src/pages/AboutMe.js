@@ -55,7 +55,7 @@ export const AboutMe = () => {
         <Box className={classes.container}>
             <Box className={classes.root}>
                 <Paper elevation={3} className={classes.paperStyle}>
-                    <p> I'm a frontend developer with a Bank Appraiser background, as I worked for the past 13 years as an Appraiser (and Economist), so I believe my experience from working in a bank allows me to transfer some of my skills.
+                    <p> I'm a frontend developer with a Bank Appraiser background. I have worked for the past 13 years as an Appraiser (and Economist), so I believe my experience from working in a bank allows me to transfer some of my skills.
                     For example, I know how to be responsible for my own work and do things quality and by the low.
                     I learned how to handle different situations. Sometimes I needed to work in teams and individually.
                     I have had cases that make me see opportunities rather than problems.
