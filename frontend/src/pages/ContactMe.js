@@ -7,27 +7,25 @@ import mailImg from '../assets/images/mailImg.png'
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        height: '100vh',
         background: 'rgb(165,158,205)',
-        background: 'linear-gradient(90deg, rgba(165,158,205,1) 0%, rgba(23,213,9,1) 100%)'
+        background: 'linear-gradient(90deg, rgba(165,158,205,1) 0%, rgba(23,213,9,1) 100%)',
+        display: ' flex',
+        justifyContent: 'center',
+        flexGrow: 1
     },
     paperStyle: {
         margin: '20px',
-        padding: '10px',
-        width: 'auto',
-        height: 'auto',
+        maxWidth: '500px',
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+        textAlign: 'center'
     },
     imgStyle: {
-        width: '25%',
-        margin: '5px'
+        width: '50%',
     },
     contactContainer: {
         display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
+        flexDirection: 'column',
         alignItems: 'center'
     },
     mailStyle: {
@@ -47,12 +45,10 @@ export const ContactMe = () => {
     return (
         <Box className={classes.container}>
             <Paper elevation={3} className={classes.paperStyle}>
-                <h2> Please do not hesitate to contact me for further information on this mail: </h2>
                 <Box className={classes.contactContainer}>
                     <img className={classes.imgStyle} alt='woman with letters' src={mailImg} />
-                    <Box>
-                        <a className={classes.mailStyle} href='mailto:sandra@shumantevi.mk'>sandra@shumantevi.mk</a>
-                    </Box>
+                    <h2> Please do not hesitate to contact me for further information on this mail: </h2>
+                    <a className={classes.mailStyle} href='mailto:sandra@shumantevi.mk'>sandra@shumantevi.mk</a>
                 </Box>
             </Paper>
         </Box>

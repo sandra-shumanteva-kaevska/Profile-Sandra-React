@@ -12,9 +12,6 @@ import ContactMailIcon from '@material-ui/icons/ContactMail'
 import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
     appBar: {
         backgroundColor: '#f90892'
     },
@@ -37,45 +34,42 @@ export const Navbar = () => {
     const classes = useStyles()
 
     return (
-        <div className={classes.root}>
-            <AppBar position='static' className={classes.appBar}>
-                <Toolbar className={classes.toolbar}>
-                    <Box className={classes.navLeft}>
-                        <IconButton href='https://github.com/sandra-shumanteva-kaevska?tab=repositories' title='GitHub repositories' target='blank'>
-                            <GitHubIcon className={classes.icon} />
+        <AppBar position='sticky' className={classes.appBar}>
+            <Toolbar className={classes.toolbar}>
+                <Box className={classes.navLeft}>
+                    <IconButton href='https://github.com/sandra-shumanteva-kaevska?tab=repositories' title='GitHub repositories' target='blank'>
+                        <GitHubIcon className={classes.icon} />
+                    </IconButton>
+
+                    <IconButton href='https://www.linkedin.com/in/sandra-shumanteva-kaevska-816064193/' title='Linkedin' target='blank'>
+                        <LinkedInIcon className={classes.icon} />
+                    </IconButton>
+                </Box>
+                <Box className={classes.navRight}>
+                    <Link to={`/`}>
+                        <IconButton title='Home' >
+                            <HomeIcon className={classes.icon} />
                         </IconButton>
+                    </Link>
 
-                        <IconButton href='https://www.linkedin.com/in/sandra-shumanteva-kaevska-816064193/' title='Linkedin' target='blank'>
-                            <LinkedInIcon className={classes.icon} />
+                    <Link to={`/projects`}>
+                        <IconButton title='My Projects' >
+                            <AssignmentIcon className={classes.icon} />
                         </IconButton>
-                    </Box>
-                    <Box className={classes.navRight}>
-                        <Link to={`/`}>
-                            <IconButton title='Home' >
-                                <HomeIcon className={classes.icon} />
-                            </IconButton>
-                        </Link>
+                    </Link>
+                    <Link to={'/aboutMe'}>
+                        <IconButton title='About Me' >
+                            <InfoIcon className={classes.icon} />
+                        </IconButton>
+                    </Link>
 
-                        <Link to={`/projects`}>
-                            <IconButton title='My Projects' >
-                                <AssignmentIcon className={classes.icon} />
-                            </IconButton>
-                        </Link>
-                        <Link to={'/aboutMe'}>
-                            <IconButton title='About Me' >
-                                <InfoIcon className={classes.icon} />
-                            </IconButton>
-                        </Link>
-
-                        <Link to={'/contactMe'}>
-                            <IconButton title='Contact Me' >
-                                <ContactMailIcon className={classes.icon} />
-                            </IconButton>
-                        </Link>
-                    </Box>
-                </Toolbar>
-
-            </AppBar>
-        </div>
-    );
+                    <Link to={'/contactMe'}>
+                        <IconButton title='Contact Me' >
+                            <ContactMailIcon className={classes.icon} />
+                        </IconButton>
+                    </Link>
+                </Box>
+            </Toolbar>
+        </AppBar>
+    )
 }

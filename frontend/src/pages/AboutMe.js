@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     container: {
-        height: '100',
+        display: 'flex',
+        flexGrow: 1,
         background: 'rgb(165,158,205)',
         background: 'linear-gradient(90deg, rgba(165,158,205,1) 0%, rgba(23,213,9,1) 100%)'
     },
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap'
     },
     imgStyle: {
-        width: '30%',
+        width: '40%',
         margin: '10px',
         flex: '1 0 21%',
         '@media (max-width: 480px)': {

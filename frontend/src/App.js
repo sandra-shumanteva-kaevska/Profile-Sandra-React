@@ -14,11 +14,19 @@ import { ContactMe } from './pages/ContactMe'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         flex: '1',
+        position: 'relative'
     },
+    loaderStyle: {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 1
+    }
 }))
 
 export const App = () => {
@@ -30,12 +38,12 @@ export const App = () => {
                 <Box className={classes.root}>
                     <Navbar />
 
-                    {loader && <Loader
+                    {loader && <Box className={classes.loaderStyle}><Loader
                         type='Hearts'
                         color='pink'
                         height={200}
                         width={200}
-                        className='loader' />}
+                    /></Box>}
 
                     <Switch>
                         <Route path='/' exact>

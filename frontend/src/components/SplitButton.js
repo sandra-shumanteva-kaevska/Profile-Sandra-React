@@ -57,7 +57,7 @@ export const SplitButton = ({ preview }) => {
                 </Grid>
                 : <Grid container direction='column' alignItems='center'>
                     <Grid item xs={12} >
-                        <ButtonGroup variant='contained' ref={anchorRef} aria-label='split button'>
+                        <ButtonGroup variant='text' ref={anchorRef} aria-label='split button'>
                             <Button className={classes.buttonGreen} href={preview[selectedPreview]} target='blank'> View {selectedPreview} </Button>
                             <Button className={classes.buttonGreen}
                                 color='primary'
@@ -71,12 +71,12 @@ export const SplitButton = ({ preview }) => {
                                 <ArrowDropDownIcon />
                             </Button>
                         </ButtonGroup>
-                        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+                        <Popper style={{ zIndex: 10 }} open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
                             {({ TransitionProps, placement }) => (
                                 <Grow
                                     {...TransitionProps}
                                     style={{
-                                        transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom',
+                                        transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom'
                                     }}
                                 >
                                     <Paper>

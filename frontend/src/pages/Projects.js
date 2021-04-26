@@ -7,7 +7,8 @@ import { baseAPI } from '../config'
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        height: '100',
+        display: 'flex',
+        flexGrow: 1,
         background: 'rgb(165,158,205)',
         background: 'linear-gradient(90deg, rgba(165,158,205,1) 0%, rgba(23,213,9,1) 100%)'
     },

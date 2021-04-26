@@ -38,6 +38,7 @@ const useStyles = makeStyles({
     },
     buttonPurple: {
         backgroundColor: '#9c27b0',
+        color: 'white',
         '&:hover': {
             backgroundColor: '#7b1fa2'
         }
