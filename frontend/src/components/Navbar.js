@@ -11,8 +11,6 @@ import InfoIcon from '@material-ui/icons/Info'
 import ContactMailIcon from '@material-ui/icons/ContactMail'
 import { Link } from 'react-router-dom'
 
-
-
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,

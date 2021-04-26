@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
         float: 'right',
         margin: '20px',
     }
-
 }))
 export const Home = () => {
     const classes = useStyles()

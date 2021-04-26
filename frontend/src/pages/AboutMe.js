@@ -48,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
             margin: '3px',
             flex: '1 0 90%',
         },
-
         '@media (min-width: 481px) and (max-width: 780px)': {
             width: '50%',
             margin: '5px',
@@ -58,7 +57,6 @@ const useStyles = makeStyles((theme) => ({
     img: {
         width: '100%'
     }
-
 }))
 export const AboutMe = () => {
     const classes = useStyles()
@@ -99,7 +97,6 @@ export const AboutMe = () => {
                     </Box>
                 </Paper>
             </Box>
-
         </Box>
     )
 }

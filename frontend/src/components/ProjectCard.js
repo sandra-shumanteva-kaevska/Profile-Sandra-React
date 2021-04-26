@@ -13,7 +13,6 @@ import Chip from '@material-ui/core/Chip'
 import { baseAPI } from '../config'
 import { SplitButton } from '../components/SplitButton'
 
-
 const useStyles = makeStyles({
     root: {
         padding: '20px',
@@ -64,17 +63,17 @@ export const ProjectCard = (project) => {
                         title='picture of project'
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant='h5' component='h2'>
                             {project.title}
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
+                        <Typography variant='body2' color='textSecondary' component='p'>
                             {project.description}
                         </Typography>
                         <Box className={classes.techStyle}>
                             {project.tech.map(i => <React.Fragment key={i} >
                                 {heightlightTech.includes(i) ?
-                                    <Chip size="small" color="secondary" label={i} className={classes.chipStyle} />
-                                    : <Chip size="small" label={i} className={classes.chipStyle} />
+                                    <Chip size='small' color='secondary' label={i} className={classes.chipStyle} />
+                                    : <Chip size='small' label={i} className={classes.chipStyle} />
                                 }
                             </React.Fragment>
                             )}

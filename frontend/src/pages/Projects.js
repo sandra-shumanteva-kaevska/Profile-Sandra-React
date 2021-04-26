@@ -22,7 +22,6 @@ export const Projects = ({ showLoader }) => {
     const [error, setError] = useState('')
     const classes = useStyles()
 
-
     useEffect(() => {
         showLoader(true)
         fetch(`${baseAPI}/projects`)
@@ -48,6 +47,5 @@ export const Projects = ({ showLoader }) => {
                 )}
             </Box>
         </Box>
-
     )
 }

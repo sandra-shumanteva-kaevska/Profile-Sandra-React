@@ -32,11 +32,9 @@ const useStyles = makeStyles((theme) => ({
     },
     mailStyle: {
         fontSize: '30px',
-
         '@media (max-width: 480px)': {
             fontSize: '15px',
         },
-
         '@media (min-width: 481px) and (max-width: 780px)': {
             fontSize: '20px',
         }
@@ -59,6 +57,4 @@ export const ContactMe = () => {
             </Paper>
         </Box>
     )
-
-
 }

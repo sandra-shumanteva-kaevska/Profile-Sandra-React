@@ -12,8 +12,6 @@ import { Projects } from './pages/Projects'
 import { AboutMe } from './pages/AboutMe'
 import { ContactMe } from './pages/ContactMe'
 
-
-
 const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
@@ -40,7 +38,6 @@ export const App = () => {
                         className='loader' />}
 
                     <Switch>
-
                         <Route path='/' exact>
                             <Home />
                         </Route>
@@ -56,14 +53,12 @@ export const App = () => {
                         <Route path='/contactMe' exact>
                             <ContactMe />
                         </Route>
-
                     </Switch>
                 </Box>
             </Router>
         </ThemeProvider>
     )
 }
-
 
 render(<App />, document.getElementById('root'))
 

@@ -5,6 +5,6 @@ export const myTheme = createMuiTheme({
         fontFamily: [
             'Chilanka',
             'cursive',
-        ].join(','),
-    },
+        ].join(',')
+    }
 })
