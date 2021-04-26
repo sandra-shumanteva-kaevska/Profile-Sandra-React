@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '30px',
         '@media (max-width: 480px)': {
             fontSize: '15px',
-            fontSize: '70px'
+            fontSize: '32px'
         },
         '@media (min-width: 481px) and (max-width: 780px)': {
             fontSize: '20px',
