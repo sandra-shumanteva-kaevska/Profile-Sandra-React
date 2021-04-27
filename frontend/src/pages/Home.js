@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#000000a6'
     },
     containerImg: {
-        alignSelf: 'flex-end'
+        alignSelf: 'center'
     },
     myImg: {
         width: '45%',

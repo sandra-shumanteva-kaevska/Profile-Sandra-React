@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
         padding: '10px',
         fontSize: '32px'
     }
-
 }))
 
 export const ContactMe = () => {
