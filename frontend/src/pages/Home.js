@@ -22,11 +22,12 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#000000a6'
     },
     containerImg: {
-        alignSelf: 'center'
+        alignSelf: 'center',
+        width: "100%"
     },
     myImg: {
-        maxWidth: "600px",
-        width: '55%',
+        maxWidth: "350px",
+        width: '60%',
         border: '3px solid #f90892',
         borderRadius: '50%',
         float: 'right',
