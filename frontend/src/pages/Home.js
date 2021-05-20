@@ -25,8 +25,9 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: 'center'
     },
     myImg: {
-        width: '45%',
-        border: '3px solid white',
+        maxWidth: "600px",
+        width: '55%',
+        border: '3px solid #f90892',
         borderRadius: '50%',
         float: 'right',
         margin: '20px',
