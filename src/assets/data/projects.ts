@@ -19,8 +19,8 @@ import FriendsNewsSiteImg from "assets/images/projects/friends-news-site-img.png
 export const data = [
     {
         preview: {
-            backend: "https://explore-macedonia.herokuapp.com",
-            frontend: "https://explore-north-macedonia.netlify.app/"
+            frontend: "https://explore-north-macedonia.netlify.app/",
+            backend: "https://explore-macedonia.herokuapp.com"
         },
         tech: [
             "React",
@@ -46,8 +46,8 @@ export const data = [
     },
     {
         preview: {
-            backend: "https://authentication-sandra-sofia.herokuapp.com/",
-            frontend: "https://auth-sandra-sofia.netlify.app/"
+            frontend: "https://auth-sandra-sofia.netlify.app/",
+            backend: "https://authentication-sandra-sofia.herokuapp.com/"
         },
         tech: [
             "React",
@@ -72,8 +72,8 @@ export const data = [
     },
     {
         preview: {
-            backend: "https://happy-thoughts-sandra.herokuapp.com/",
-            frontend: "https://happy-thoughts-sandra-shumanteva.netlify.app/"
+            frontend: "https://happy-thoughts-sandra-shumanteva.netlify.app/",
+            backend: "https://happy-thoughts-sandra.herokuapp.com/"
         },
         tech: [
             "React",

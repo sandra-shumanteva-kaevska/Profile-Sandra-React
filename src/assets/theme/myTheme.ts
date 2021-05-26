@@ -38,10 +38,7 @@ export const myTheme = createMuiTheme({
         }
     },
     typography: {
-        fontFamily: [
-            "Chilanka",
-            "cursive"
-        ].join(","),
+        fontFamily: ["Montserrat", "Open Sans"].join(","),
         subtitle2: {
             color: "white"
         }
