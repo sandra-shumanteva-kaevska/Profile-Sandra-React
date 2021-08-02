@@ -24,7 +24,7 @@ export const Footer = () => {
             <Box className={classes.topHolder}>
                 <Container fixed>
                     <Typography variant="h6" align="center">
-                        Please do not hesitate to contact me for further information <Link href="mailto:sandra@shumantevi.mk">sandra@shumantevi.mk</Link>
+                        Please do not hesitate to contact me for further information <Link href="mailto:shumanteva@gmail.com">shumanteva@gmail.com</Link>
                     </Typography>
                 </Container>
             </Box>
