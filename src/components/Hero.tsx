@@ -43,7 +43,7 @@ export const Hero = () => {
             <Box className={classes.title}>
                 <Typography variant="h4" paragraph>PORTFOLIO: Sandra Shumanteva Kaevska</Typography>
                 <Typography variant="h5" paragraph>frontend developer</Typography>
-                <Typography variant="h5" paragraph>+ bank appriser</Typography>
+                <Typography variant="h5" paragraph>+ Software Tester (ISTQB)</Typography>
             </Box>
             <Box className={classes.containerImg}>
                 <img className={classes.myImg} src={myImg} alt="my-profile"></img>
