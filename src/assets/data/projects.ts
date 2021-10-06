@@ -29,7 +29,6 @@ export const data = [
       "HTML",
       "CSS",
       "JS",
-      "Git",
       "Responsive",
     ],
     _id: "6086feba21296f0028b8f79b",
