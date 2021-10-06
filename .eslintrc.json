@@ -20,6 +20,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "comma-dangle": [ 
+            "off"
+        ],
         "semi": [
             "error",
             "always"
@@ -29,7 +32,7 @@
             "double"
         ],
         "indent": [
-            "error",
+            "off",
             4
         ],
         "no-use-before-define": [
