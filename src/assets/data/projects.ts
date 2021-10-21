@@ -141,7 +141,15 @@ export const data = [
   },
   {
     preview: { frontend: "https://todos-sandra-shumanteva.netlify.app/" },
-    tech: ["React", "HTML", "CSS", "JS", "Styled Components", "Responsive"],
+    tech: [
+      "React",
+      "Redux",
+      "HTML",
+      "CSS",
+      "JS",
+      "Styled Components",
+      "Responsive",
+    ],
     _id: "6086feba21296f0028b8f7a0",
     title: "WEB APP FOR TODOS",
     description:
